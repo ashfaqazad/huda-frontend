@@ -94,6 +94,41 @@ const sampleCars = [
       ja: "購入希望者のみ。国内・輸出対応可。輸送・整備が容易。",
     },
   },
+
+
+
+  // --- Vehicle 4: Hino Dutro 2005 ---
+{
+  id: 4,
+  Title: { en: "Hino Dutro 2005", ja: "日野デュトロ 2005年式" },
+  price: "¥450,000 (45万)",
+  img: "/Images/dutro-1.jpg",
+  short: {
+    en: "Hino Dutro 2005 in excellent condition — reliable, clean, and business-ready.",
+    ja: "状態の良い2005年式日野デュトロ。信頼性が高く、清潔で業務にすぐ使えます。",
+  },
+  year: { en: "2005", ja: "平成17年" },
+  mileage: { en: "371,414 km", ja: "371,414 km" },
+  location: { en: "Nara, Japan", ja: "奈良、日本" },
+  transmission: { en: "Manual", ja: "マニュアル" },
+  shaken: { en: "Check Document", ja: "書類を確認" },
+  kittsu: { en: "Available", ja: "記録簿あり" },
+  condition: {
+    en: `Very clean and powerful truck.
+    Engine and body both are in good working condition.
+    Perfect for business or export use.
+    Ready to drive — no major issues.`,
+    ja: `とてもきれいでパワフルなトラックです。
+    エンジンとボディは共に良好な状態です。
+    業務または輸出に最適。
+    大きな問題はなく、すぐに走行可能です。`,
+  },
+  note: {
+    en: "📞 Serious buyers only. Feel free to contact for more details.",
+    ja: "📞 購入希望者のみ。詳細についてはお気軽にお問い合わせください。",
+  },
+},
+
 ];
 
 export default function Home() {

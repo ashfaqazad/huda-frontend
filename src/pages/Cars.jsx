@@ -32,6 +32,16 @@ const allCars = [
     mileage: { en: "N/A", ja: "該当なし" },
     img: "/Images/loder-1.jpeg",
   },
+  // --- Vehicle 4: Hino Dutro 2005 ---
+{
+  id: 4,
+  title: { en: "Hino Dutro 2005", ja: "日野デュトロ 2005年式" },
+  price: 450000,
+  year: 2005,
+  mileage: { en: "371,414 km", ja: "371,414 km" },
+  img: "/Images/dutro-1.jpg",
+},
+
 ];
 
 export default function Cars() {

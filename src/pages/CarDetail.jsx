@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Helmet } from "react-helmet";
+// import { useEffect } from "react";
+// import { useParams } from "react-router-dom";
+
 
 const allCars = [
   {
@@ -14,14 +17,16 @@ const allCars = [
     transmission: { en: "Manual", ja: "マニュアル" },
     shaken: { en: "Valid (check document)", ja: "有効（書類を確認）" },
     kittsu: { en: "Available", ja: "記録簿あり" },
+
     condition: {
-      en: "Very clean condition, no major issues, ready to use.",
-      ja: "とてもきれいな状態で、大きな問題はなく、すぐに使用可能です。",
+      en: "Engine: Diesel, Transmission: Manual, Condition: Excellent, Record Book: Available",
+      ja: "エンジン: ディーゼル, トランスミッション: マニュアル, 状態: 良好, 記録簿: あり",
     },
     note: {
-      en: "Feel free to contact, but only serious buyers. Time-wasters, please avoid.",
-      ja: "購入を検討している方のみご連絡ください。冷やかしはご遠慮ください。",
+      en: "A durable and powerful heavy-duty truck, perfect for logistics and transport. Maintained with proper inspection and ready for work.",
+      ja: "物流や輸送に最適な耐久性とパワーを備えた大型トラック。適切な点検を受け、すぐに使用可能です。",
     },
+
     images: [
       "/Images/image-2.jpeg",
       "/Images/image-3.jpeg",
@@ -281,19 +286,123 @@ Local and export sales available.
     en: "Komatsu PC20MR-1 is a compact excavator ideal for small-scale construction and farm use. Smooth hydraulic performance and strong build quality.",
     ja: "PC20MR-1は小規模工事や農作業に適したコンパクトショベル。油圧性能が優れています。",
   },
-}
+},
 
 
 
+// --- ID: 4 Hino Dutro 2005 ---
+{
+  id: 4,
+  title: { en: "Hino Dutro 2005", ja: "日野デュトロ 2005年式" },
+  price: "¥450,000 (45万)",
+  year: { en: "2005", ja: "平成17年" },
+  mileage: { en: "371,414 km", ja: "371,414 km" },
+  location: { en: "Nara, Japan", ja: "奈良、日本" },
+  transmission: { en: "Manual", ja: "マニュアル" },
+  shaken: { en: "Check Document", ja: "書類を確認" },
+  kittsu: { en: "Available", ja: "記録簿あり" },
+  // video: "/Videos/hino-dutro.mp4",
+
+  condition: {
+    en: `
+🚛 Hino Dutro 2005 — Excellent Condition
+
+💴 Price: ¥450,000 (45 Man)
+📍 Location: Nara, Japan
+📅 Year: 2005
+📏 Mileage: 371,414 km
+⚙️ Model: PB-XZU301X
+🔧 Engine Type: S05D Diesel
+⚖️ Load Capacity: 2,000 kg
+🚚 Gross Weight: 6,411 kg
+🕹 Drive Type: Manual
+
+⸻
+
+🧰 Condition & Features
+• Very clean and powerful truck  
+• Engine and body both in good working condition  
+• Perfect for business or export use  
+• Ready to drive — no major issues  
+
+⸻
+
+📞 Contact
+Serious buyers only please.  
+Feel free to contact for more details.
+    `,
+    ja: `
+🚛 日野デュトロ 2005年式 — 良好な状態
+
+💴 価格: 45万円 (¥450,000)
+📍 所在地: 奈良県、日本
+📅 年式: 平成17年 (2005年)
+📏 走行距離: 371,414 km
+⚙️ 型式: PB-XZU301X
+🔧 エンジンタイプ: S05D ディーゼル
+⚖️ 最大積載量: 2,000 kg
+🚚 車両総重量: 6,411 kg
+🕹 駆動方式: マニュアル
+
+⸻
+
+🧰 コンディション・特徴
+• とてもきれいでパワフルなトラック  
+• エンジンとボディはどちらも良好な状態  
+• 業務または輸出に最適  
+• すぐに運転可能で、大きな問題なし  
+
+⸻
+
+📞 お問い合わせ
+購入希望者のみご連絡ください。  
+詳細についてはお気軽にお問い合わせください。
+    `,
+  },
+
+  note: {
+    en: "Very clean, reliable truck — perfect for business or export use. Contact only if serious.",
+    ja: "清潔で信頼性の高いトラック。業務・輸出に最適。購入希望者のみご連絡ください。",
+  },
+
+  images: [
+    "/Images/dutro-1.jpg",
+    "/Images/dutro-2.jpg",
+    "/Images/dutro-3.jpg",
+    "/Images/dutro-4.jpg",
+    "/Images/dutro-5.jpg",
+    "/Images/dutro-5.jpg",
+
+  ],
+
+  specs: {
+    en: "S05D Diesel Engine, 2,000 kg Load, 6,411 kg Gross Weight, Manual Drive",
+    ja: "S05Dディーゼルエンジン, 最大積載2,000kg, 総重量6,411kg, マニュアル駆動",
+  },
+
+  description: {
+    en: "Hino Dutro 2005 is a clean, durable, and reliable truck ideal for business or export. Engine and body are in solid working condition.",
+    ja: "2005年式の日野デュトロは、業務・輸出に最適な清潔で信頼性の高いトラックです。エンジンとボディは良好な状態です。",
+  },
+},
 
 
 ];
+
+
+
+
 
 export default function CarDetail() {
   const { t, i18n } = useTranslation();
   const { lng, id } = useParams();
   const [currentImage, setCurrentImage] = useState(0);
   const currentLanguage = i18n.language.startsWith("ja") ? "ja" : "en";
+
+
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   useEffect(() => {
     if (lng && ["en", "ja"].includes(lng)) i18n.changeLanguage(lng);
@@ -412,9 +521,9 @@ export default function CarDetail() {
               {t("car_specs", { defaultValue: "Specifications" })}
             </h2>
             <ul className="text-gray-700 space-y-2">
-              <li>• {car.specs?.[currentLanguage]}</li>
-              <li>• {car.description?.[currentLanguage]}</li>
-              <li>• {car.note?.[currentLanguage]}</li>
+              <li>{car.specs?.[currentLanguage]}</li>
+              <li>{car.description?.[currentLanguage]}</li>
+              <li>{car.note?.[currentLanguage]}</li>
             </ul>
           </div>
         </div>
@@ -479,6 +588,7 @@ export default function CarDetail() {
 //       "/Images/image-9.jpg",
 //       "/Images/image-10.jpg",
 //     ],
+
 //     specs: {
 //       en: "Engine: Diesel, Transmission: Manual, Condition: Excellent, Record Book: Available",
 //       ja: "エンジン: ディーゼル, トランスミッション: マニュアル, 状態: 良好, 記録簿: あり",
@@ -487,6 +597,7 @@ export default function CarDetail() {
 //       en: "A durable and powerful heavy-duty truck, perfect for logistics and transport. Maintained with proper inspection and ready for work.",
 //       ja: "物流や輸送に最適な耐久性とパワーを備えた大型トラック。適切な点検を受け、すぐに使用可能です。",
 //     },
+
 //   },
 
 //   // --- ID: 2 Daihatsu Hijet Dump Truck ---
