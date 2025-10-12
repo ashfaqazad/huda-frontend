@@ -25,11 +25,13 @@ export default function About() {
   role: { en: 'Founder & CEO', ja: '創業者兼CEO' },
   img: '/Images/ZakariyaBh.jpeg',
 },
-{
-  name: { en: '#', ja: '#' },
-  role: { en: 'Operations Manager', ja: 'オペレーションマネージャー' }, // Correct form
-  img: '#',
-},
+
+// {
+//   name: { en: '#', ja: '#' },
+//   role: { en: 'Operations Manager', ja: 'オペレーションマネージャー' }, // Correct form
+//   img: '#',
+// },
+
 {
   name: { en: 'Ashfaque Ahmed', ja: 'アシュファク・アフメド' }, // Ashfaque Ahmed
   role: { en: 'Customer Support', ja: 'カスタマーサポート' },
@@ -71,29 +73,37 @@ export default function About() {
       </section>
 
       {/* Team Section */}
-      <section className="bg-white py-16">
-        <div className="container mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">{t('team_title')}</h2>
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
-            {teamMembers.map((member, idx) => (
-              <div
-                key={idx}
-                className="bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition p-6 text-center"
-              >
-                <img
-                  src={member.img}
-                  alt={member.name[currentLanguage] || member.name.en}
-                  className="w-28 h-28 mx-auto rounded-full object-cover mb-4"
-                />
-                <h3 className="text-xl font-semibold text-gray-800">
-                  {member.name[currentLanguage] || member.name.en}
-                </h3>
-                <p className="text-green-600 font-medium">{member.role[currentLanguage] || member.role.en}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
+          <section className="bg-white py-16">
+  <div className="container mx-auto px-6 lg:px-8 text-center">
+    {/* Section Title */}
+    <h2 className="text-3xl font-bold text-gray-800 mb-12">{t('team_title')}</h2>
+
+{/* Team Grid */}
+<div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 justify-center mx-auto max-w-4xl">
+  {teamMembers.map((member, idx) => (
+    <div
+      key={idx}
+      className="bg-gray-100 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 flex flex-col items-center justify-center text-center w-[85%] mx-auto"
+    >
+      <img
+        src={member.img}
+        alt={member.name[currentLanguage] || member.name.en}
+        className="w-24 h-24 rounded-full object-cover mb-4"
+      />
+      <h3 className="text-xl font-semibold text-gray-800 mb-1">
+        {member.name[currentLanguage] || member.name.en}
+      </h3>
+      <p className="text-green-600 font-medium">
+        {member.role[currentLanguage] || member.role.en}
+      </p>
+    </div>
+  ))}
+</div>
+    
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="py-16 bg-gray-100 text-center">
