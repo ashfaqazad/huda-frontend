@@ -1,48 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import carsData from "../data/carsData";
 
-const allCars = [
-  // --- Vehicle 1: Hino Profia Truck ---
-  {
-    id: 1,
-    title: { en: "Hino Profia Truck", ja: "日野プロフィアトラック" },
-    price: 2100000,
-    year: 2016,
-    mileage: { en: "1,311,547 km", ja: "1,311,547 km" },
-    img: "/Images/image-1.jpeg",
-  },
-
-  // --- Vehicle 2: Daihatsu Hijet Dump Truck ---
-  {
-    id: 2,
-    title: { en: "Daihatsu Hijet Dump Truck", ja: "ダイハツ ハイゼット ダンプトラック" },
-    price: 300000,
-    year: 2009,
-    mileage: { en: "N/A", ja: "該当なし" },
-    img: "/Images/hijet-1.jpg",
-  },
-
-  // --- Vehicle 3: Komatsu PC20MR-1 Mini Excavator ---
-  {
-    id: 3,
-    title: { en: "Komatsu PC20MR-1 Mini Excavator", ja: "コマツ PC20MR-1 ミニショベル" },
-    price: 700000,
-    year: 2005,
-    mileage: { en: "N/A", ja: "該当なし" },
-    img: "/Images/loder-1.jpeg",
-  },
-  // --- Vehicle 4: Hino Dutro 2005 ---
-{
-  id: 4,
-  title: { en: "Hino Dutro 2005", ja: "日野デュトロ 2005年式" },
-  price: 450000,
-  year: 2005,
-  mileage: { en: "371,414 km", ja: "371,414 km" },
-  img: "/Images/dutro-1.jpg",
-},
-
-];
 
 export default function Cars() {
   const { t, i18n } = useTranslation();
@@ -65,7 +25,9 @@ export default function Cars() {
   // Helper for language-prefixed link
   const getLink = (path) => `/${currentLanguage}${path === "/" ? "" : path}`;
 
-  const filtered = allCars
+  // const filtered = allCars
+  const filtered = carsData
+
     .filter((c) => {
       const title = c.title[currentLanguage] || c.title.en;
       return title?.toLowerCase().includes(query.trim().toLowerCase());
