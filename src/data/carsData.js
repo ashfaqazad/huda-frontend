@@ -48,6 +48,16 @@ const carsData = [
   img: "/Images/Excavator-1.jpg",
 },
 
+{
+  id: 6,
+title: { en: "ISUZU Dump Truck", ja: "いすゞ ダンプトラック" },
+price: 1800000,
+year: 1996,
+mileage: { en: "N/A", ja: "N/A" },
+img: "/Images/truck-1.jpg",
+
+},
+
 ];
 
 

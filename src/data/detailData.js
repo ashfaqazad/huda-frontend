@@ -442,7 +442,83 @@ Feel free to contact for more details.
     en: "Komatsu PC75UU-1 Excavator in good working condition. Engine and pump are functional. Suitable for construction and digging tasks. Local and export options available.",
     ja: "コマツ PC75UU-1 油圧ショベルは良好な状態です。エンジンとポンプは正常に作動します。建設・掘削作業に最適。国内販売・輸出対応可能。",
   },
+},
+
+
+
+
+{
+  id: 6,
+  title: { en: "ISUZU Dump Truck", ja: "いすゞ ダンプトラック" },
+  price: "¥1,800,000",
+  year: { en: "1996", ja: "1996年" },
+  mileage: { en: "N/A", ja: "N/A" },
+  location: { en: "Nara, Japan", ja: "奈良、日本" },
+  transmission: { en: "Manual", ja: "マニュアル" },
+  shaken: { en: "Available", ja: "車検証あり" },
+  kittsu: { en: "", ja: "" },
+
+  condition: {
+    en: `
+🔸 Condition: Good working condition  
+🔸 Engine: Diesel / 4HL1  
+🔸 Model: KC-NRR33C2GD  
+🔸 Transmission: Manual  
+🔸 Body: Strong, Dump up–down working perfectly  
+🔸 Year: 1996  
+🔸 Price: ¥1,800,000  
+🔸 Location: Nara, Japan  
+📞 Feel free to contact for more details or inspection.  
+✅ Local and export both available — your satisfaction is our priority!
+    `,
+    ja: `
+🔸 状態：良好な作業状態  
+🔸 エンジン：ディーゼル / 4HL1  
+🔸 モデル：KC-NRR33C2GD  
+🔸 トランスミッション：マニュアル  
+🔸 ボディ：頑丈・ダンプ上下動作良好  
+🔸 年式：1996年  
+🔸 価格：180万円  
+🔸 場所：奈良、日本  
+📞 詳細や点検についてはお気軽にお問い合わせください。  
+✅ 国内販売・輸出どちらも対応可能 — お客様の満足が最優先です！
+    `,
+  },
+
+  note: {
+    en: "ISUZU Dump Truck — good condition, manual transmission, diesel engine, ready to work.",
+    ja: "いすゞ ダンプトラック — 良好な状態、マニュアルトランスミッション、ディーゼルエンジン、すぐに使用可能。",
+  },
+
+  images: [
+    "/Images/truck-1.jpg",
+    "/Images/truck-2.jpg",
+    "/Images/truck-3.jpg",
+    "/Images/truck-4.jpg",
+    "/Images/truck-5.jpg",
+    "/Images/truck-6.jpg",
+    "/Images/truck-7.jpg",
+    "/Images/truck-8.jpg",
+    "/Images/truck-9.jpg",
+
+  ],
+
+  specs: {
+    en: "ISUZU Dump Truck, Diesel 4HL1, Manual, Good condition, Nara Japan",
+    ja: "いすゞ ダンプトラック, ディーゼル 4HL1, マニュアル, 良好な状態, 奈良 日本",
+  },
+
+  description: {
+    en: "ISUZU Dump Truck in good condition with diesel 4HL1 engine and manual transmission. Strong body and perfectly working dump. Located in Nara, Japan. Local and export both available.",
+    ja: "ディーゼル4HL1エンジンとマニュアルトランスミッションを搭載した良好な状態のいすゞダンプトラック。頑丈なボディでダンプ動作も良好。奈良に所在。国内販売・輸出対応可能。",
+  },
 }
+
+
+
+
+
+
 
 ];
 
