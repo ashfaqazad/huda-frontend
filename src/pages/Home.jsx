@@ -37,7 +37,7 @@ export default function Home() {
         {/* --- HERO --- */}
         <header className="relative">
           <div
-            className="h-[60vh] sm:h-[70vh] bg-cover bg-center flex items-center justify-center text-center"
+            className="h-[60vh] sm:h-[70vh] bg-cover bg-center flex items-center justify-center text-center bg-blue-900 text-white"
             style={{
               backgroundImage:
                 "linear-gradient(rgba(10,10,10,0.45), rgba(10,10,10,0.45)), url('https://images.unsplash.com/photo-1502873780-1cb2f3f8a6c7?q=80&w=1600&auto=format&fit=crop')",
