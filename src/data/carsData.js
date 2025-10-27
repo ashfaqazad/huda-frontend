@@ -7,6 +7,8 @@ const carsData = [
     year: 2016,
     mileage: { en: "1,311,547 km", ja: "1,311,547 km" },
     img: "/Images/image-1.jpeg",
+    status: "sold", // 👈 add this line
+
   },
 
   // --- Vehicle 2: Daihatsu Hijet Dump Truck ---
@@ -36,6 +38,8 @@ const carsData = [
   year: 2005,
   mileage: { en: "371,414 km", ja: "371,414 km" },
   img: "/Images/dutro-1.jpg",
+  status: "sold", // 👈 add this line
+
 },
 
 

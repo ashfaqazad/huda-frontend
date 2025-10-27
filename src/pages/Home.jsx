@@ -85,7 +85,9 @@ export default function Home() {
             <h2 className="text-2xl font-bold mb-6">{t("featured_cars")}</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {(query ? filtered : cars).map((car) => (
+
+
+              {/* {(query ? filtered : cars).map((car) => (
                 <article
                   key={car.id}
                   className="border rounded-lg overflow-hidden bg-white"
@@ -100,17 +102,6 @@ export default function Home() {
                       {car.year[currentLanguage] || car.year.en}
                     </div>
                   </div>
-
-                {/* <div className="relative">
-                  <img
-                    src={car.img}
-                    alt={car.Title[currentLanguage] || car.Title.en}
-                    className="w-full h-auto max-h-80 object-contain"
-                  />
-                  <div className="absolute top-3 right-3 bg-black bg-opacity-40 text-white px-2 py-1 rounded text-sm">
-                    {car.year[currentLanguage] || car.year.en}
-                  </div>
-                </div> */}
 
                   <div className="p-4">
                     <h3 className="text-lg font-semibold">
@@ -138,7 +129,74 @@ export default function Home() {
                     </div>
                   </div>
                 </article>
-              ))}
+              ))} */}
+
+
+{(query ? filtered : cars).map((car) => {
+  console.log("🚗 Car Data:", car);
+
+  return (
+    <article
+      key={car.id}
+      className="border rounded-lg overflow-hidden bg-white relative"
+    >
+      <div className="relative">
+        <img
+          src={car.img}
+          alt={car.Title?.[currentLanguage] || car.Title?.en}
+          className={`w-full h-80 object-cover transition-all duration-300 ${
+            car.status === "sold" ? "opacity-70 grayscale" : ""
+          }`}
+        />
+
+        {/* --- SOLD Badge --- */}
+        {car.status === "sold" && (
+          <div className="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-lg font-semibold text-sm">
+            SOLD
+          </div>
+        )}
+
+        <div className="absolute top-3 right-3 bg-black bg-opacity-40 text-white px-2 py-1 rounded text-sm">
+          {car.year?.[currentLanguage] || car.year?.en || car.year}
+        </div>
+      </div>
+
+      <div className="p-4">
+        <h3 className="text-lg font-semibold">
+          {car.Title?.[currentLanguage] || car.Title?.en}
+        </h3>
+
+        <p className="text-sm text-gray-600 mt-1">
+          {car.short?.[currentLanguage] || car.short?.en || ""}
+        </p>
+
+        <div className="flex items-center justify-between mt-4">
+          <div>
+            <div className="text-green-600 font-bold">{car.price}</div>
+            <div className="text-xs text-gray-500">
+              {car.mileage?.[currentLanguage] || car.mileage?.en || car.mileage}
+            </div>
+          </div>
+
+          {car.status === "sold" ? (
+            <span className="inline-block px-3 py-2 bg-gray-400 text-white rounded text-sm cursor-not-allowed">
+              Sold Out
+            </span>
+          ) : (
+            <Link
+              to={getLink(`/cars/${car.id}`)}
+              className="inline-block px-3 py-2 bg-green-600 text-white rounded hover:bg-green-700 text-sm"
+            >
+              {t("view_car")}
+            </Link>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+})}
+
+
             </div>
 
             

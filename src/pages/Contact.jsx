@@ -19,8 +19,9 @@ export default function Contact() {
     }
   }, [lng, i18n]);
 
+
   const contactDetails = {
-    address: { en: 'Tokyo, Japan', ja: '日本、東京都' },
+    address: { en: 'Osaka, Nara, Japan', ja: '日本、大阪府、奈良県' },
     phone: { en: '+81 90-1234-5678', ja: '+81 90-1234-5678' },
     email: { en: 'info@japancars.com', ja: 'info@japancars.com' },
   };

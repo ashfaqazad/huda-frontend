@@ -6,6 +6,8 @@ const homeData = [
     Title: { en: "Hino Profia Truck", ja: "日野プロフィア トラック" },
     price: "¥2,100,000 (210万)",
     img: "/Images/image-1.jpeg",
+    status: "sold", // 👈 add this line
+
     short: {
       en: "A heavy-duty Japanese truck in excellent condition",
       ja: "状態の良い日本製大型トラック",
@@ -23,6 +25,7 @@ const homeData = [
     note: {
       en: "Feel free to contact, but only serious buyers. Time-wasters, please avoid.",
       ja: "購入を検討している方のみご連絡ください。冷やかしはご遠慮ください。",
+
     },
   },
 
