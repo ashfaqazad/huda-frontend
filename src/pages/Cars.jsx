@@ -90,14 +90,14 @@ export default function Cars() {
                   <img
                     src={car.img}
                     alt={car.title[currentLanguage] || car.title.en}
-                    className={`w-full h-80 object-cover rounded-t-xl transition duration-300 ${
-                      car.status === "sold" ? "grayscale opacity-70" : ""
-                    }`}
+                    className={`w-full h-80 object-cover rounded-t-xl transition duration-300 ${car.status === "sold" ? "grayscale opacity-70" : ""
+                      }`}
                   />
+
 
                   {/* SOLD badge */}
                   {car.status === "sold" && (
-                    <span className="absolute top-3 left-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                    <span className="absolute top-3 left-3 bg-red-600 text-white Medium font-bold px-6 py-2 rounded-full shadow-lg tracking-wide">
                       SOLD
                     </span>
                   )}
