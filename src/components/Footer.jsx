@@ -76,17 +76,32 @@ export default function Footer() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">{t('footer_follow_us')}</h3>
           <div className="flex space-x-4">
-            <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-green-500 transition">
+            <a
+              href="https://www.facebook.com/share/17CSxLV42K/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 bg-gray-800 rounded-full hover:bg-green-500 transition"
+            >
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-green-500 transition">
+
+            <a
+              href="#"
+              className="p-2 bg-gray-800 rounded-full hover:bg-green-500 transition"
+            >
               <Instagram className="w-5 h-5" />
             </a>
-            <a href="#" className="p-2 bg-gray-800 rounded-full hover:bg-green-500 transition">
+
+            <a
+              href="#"
+              className="p-2 bg-gray-800 rounded-full hover:bg-green-500 transition"
+            >
               <Twitter className="w-5 h-5" />
             </a>
           </div>
         </div>
+
+
       </div>
 
       {/* Bottom Section */}
