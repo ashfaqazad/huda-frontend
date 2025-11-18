@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?>
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer round green shape -->
+  <circle cx="96" cy="96" r="96" fill="#00A63E"/>
+
+  <!-- Inner white circle for highlight -->
+  <circle cx="96" cy="96" r="82" fill="#00FF7F"/>
+
+  <!-- Stylized "ht" -->
+  <text x="96" y="118" text-anchor="middle" font-family="Arial Black, sans-serif" font-size="90" font-weight="900" fill="#00A63E">ht</text>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
@@ -33,4 +59,4 @@
 			c-0.06,0-0.12,0-0.18,0c-0.37,0.01-0.73,0.02-1.08,0.03c0,0,0,0-0.01,0c0,0-0.01,0-0.01,0v-2.56h-3.2V9.97H22.82z"/>
 	</g>
 </g>
-</svg>
+</svg> -->

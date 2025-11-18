@@ -62,6 +62,38 @@ img: "/Images/truck-1.jpg",
 
 },
 
+{
+  id: 7,
+  title: { 
+    en: "Hitachi ZW80S-5B Wheel Loader",
+    ja: "日立 ZW80S-5B ホイールローダー"
+  },
+  price: 3000000, // 300万円
+  year: "N/A",
+  mileage: { 
+    en: "Hours: 14,529",
+    ja: "稼働時間: 14,529" 
+  },
+  img: "/Images/hitachi-1.jpg",
+},
+
+{
+  id: 8,
+  title: { 
+    en: "KOMATSU PC200-8N1 Excavator",
+    ja: "コマツ PC200-8N1 油圧ショベル"
+  },
+  price: 4300000, // 430万円
+  year: 2007,
+  mileage: {
+    en: "Hours: 12,377h",
+    ja: "稼働時間: 12,377時間"
+  },
+  img: "/Images/komatsu-1.jpg",
+},
+
+
+
 ];
 
 

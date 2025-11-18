@@ -512,11 +512,186 @@ Feel free to contact for more details.
     en: "ISUZU Dump Truck in good condition with diesel 4HL1 engine and manual transmission. Strong body and perfectly working dump. Located in Nara, Japan. Local and export both available.",
     ja: "ディーゼル4HL1エンジンとマニュアルトランスミッションを搭載した良好な状態のいすゞダンプトラック。頑丈なボディでダンプ動作も良好。奈良に所在。国内販売・輸出対応可能。",
   },
+},
+
+
+
+{
+  id: 7,
+  title: { 
+    en: "Hitachi ZW80S-5B Wheel Loader", 
+    ja: "日立 ZW80S-5B ホイールローダー" 
+  },
+
+  price: "¥3,000,000",  // 300万円
+  year: { en: "N/A", ja: "N/A" },
+
+  mileage: { 
+    en: "Hours: 14,529", 
+    ja: "稼働時間: 14,529" 
+  },
+
+  location: { 
+    en: "Kyoto Kizugawa", 
+    ja: "京都 木津川" 
+  },
+
+  transmission: { en: "", ja: "" }, 
+  shaken: { en: "", ja: "" },
+  kittsu: { en: "", ja: "" },
+
+  condition: {
+    en: 
+`🔸 Condition: Excellent
+🔸 Engine: Strong & Smooth Hydraulics
+🔸 Oil Leak: None — No Mechanical Issue
+🔸 Body: Very Clean, Good Tyres
+🔸 Usage: Perfect for Yard / Factory / Recycling
+🔸 Price: ¥3,000,000
+🔸 Location: Kyoto Kizugawa
+📦 Immediate Delivery Available
+📞 Feel free to contact — Local & Export OK`,
+    
+    ja:
+`🔸 状態：極上
+🔸 エンジン：好調・油圧スムーズ
+🔸 オイル漏れ：なし・機械的問題なし
+🔸 ボディ：非常に綺麗・良好なタイヤ
+🔸 用途：ヤード/工場/リサイクル現場に最適
+🔸 価格：300万円
+🔸 場所：京都 木津川
+📦 即納可能
+📞 お気軽にお問い合わせください — 国内・輸出対応`
+  },
+
+  note: {
+    en: "Hitachi ZW80S-5B — Excellent condition, strong hydraulics, clean body, ready to work.",
+    ja: "日立 ZW80S-5B — 極上状態、油圧良好、ボディ綺麗、すぐに使用可能。",
+  },
+
+  images: [
+    "/Images/hitachi-1.jpg",
+    "/Images/hitachi-2.jpg",
+    "/Images/hitachi-3.jpg",
+    "/Images/hitachi-4.jpg",
+    "/Images/hitachi-5.jpg",
+    "/Images/hitachi-6.jpg",
+    "/Images/hitachi-7.jpg",
+    "/Images/hitachi-8.jpg",
+    "/Images/hitachi-9.jpg"
+  ],
+
+  specs: {
+    en: "Hitachi ZW80S-5B Wheel Loader | Excellent condition | Kyoto Kizugawa",
+    ja: "日立 ZW80S-5B ホイールローダー | 極上状態 | 京都 木津川",
+  },
+
+  description: {
+    en: "Hitachi ZW80S-5B wheel loader in excellent condition. Strong engine, smooth hydraulics, clean body, and no oil leaks. Ideal for yard, construction, and factory use. Located in Kyoto Kizugawa. Immediate delivery available.",
+    ja: "日立ZW80S-5Bホイールローダー。極上状態で、エンジン良好、油圧スムーズ、オイル漏れなし。ヤードや工場での使用に最適。京都木津川に所在。即納可能。",
+  },
+},
+
+
+
+
+
+
+{
+  id: 8,
+
+  title: { 
+    en: "KOMATSU PC200-8N1 Excavator",
+    ja: "コマツ PC200-8N1 油圧ショベル"
+  },
+
+  price: "¥4,300,000", // 430万円
+
+  year: { 
+    en: "2007", 
+    ja: "2007年" 
+  },
+
+  mileage: { 
+    en: "Hours: 12,377h", 
+    ja: "稼働時間: 12,377時間" 
+  },
+
+  location: { 
+    en: "Kyoto", 
+    ja: "京都" 
+  },
+
+  transmission: { en: "", ja: "" },
+  shaken: { en: "", ja: "" },
+  kittsu: { en: "", ja: "" },
+
+  condition: {
+    en:
+`🔸 Condition: Repainted
+🔸 Engine & Operation: Machine Running OK
+🔸 Inspection: Fully Checked — No Major Issues
+🔸 Crane Spec: 2.9t Crane (PC200-8-AC)
+🔸 Serial No: 310766
+🔸 Price: ¥4,300,000
+🔸 Location: Kyoto
+📦 Immediate Delivery Possible
+📞 Local Sales & Export Support Available`,
+
+    ja:
+`🔸 状態：再塗装済み
+🔸 エンジン・動作：良好
+🔸 点検：済み — 重大問題なし
+🔸 クレーン仕様：2.9t クレーン (PC200-8-AC)
+🔸 シリアル番号：310766
+🔸 価格：430万円
+🔸 場所：京都
+📦 即納可能
+📞 国内販売・輸出対応可能`
+  },
+
+  note: {
+    en: "Komatsu PC200-8N1 excavator, repainted and fully inspected. Good working condition with 2.9t crane spec. Ready for work.",
+    ja: "コマツPC200-8N1、再塗装・点検済み。動作良好で2.9tクレーン仕様。すぐに使用可能。",
+  },
+
+  images: [
+    "/Images/komatsu-1.jpg",
+    "/Images/komatsu-2.jpg",
+    "/Images/komatsu-3.jpg",
+    "/Images/komatsu-4.jpg",
+    "/Images/komatsu-5.jpg",
+    "/Images/komatsu-6.jpg",
+    "/Images/komatsu-7.jpg",
+    "/Images/komatsu-8.jpg",
+    "/Images/komatsu-9.jpg",
+    "/Images/komatsu-10.jpg",
+    "/Images/komatsu-11.jpg",
+    "/Images/komatsu-12.jpg",
+    "/Images/komatsu-13.jpg",
+    "/Images/komatsu-14.jpg",
+    "/Images/komatsu-15.jpg",
+    "/Images/komatsu-16.jpg",
+    "/Images/komatsu-17.jpg",
+    "/Images/komatsu-18.jpg",
+    "/Images/komatsu-19.jpg",
+    "/Images/komatsu-20.jpg",
+    "/Images/komatsu-21.jpg",
+    "/Images/komatsu-22.jpg"
+
+
+  ],
+
+  specs: {
+    en: "Komatsu PC200-8N1 Excavator | 2007 | 12,377h | Crane Spec | Kyoto",
+    ja: "コマツ PC200-8N1 油圧ショベル | 2007年 | 12,377時間 | クレーン仕様 | 京都",
+  },
+
+  description: {
+    en: "Komatsu PC200-8N1 excavator with 2.9t crane spec, serial 310766. Repainted and fully inspected. Machine running well and ready for export or local delivery.",
+    ja: "2.9tクレーン仕様のコマツPC200-8N1（シリアル310766）。再塗装・点検済みで動作良好。国内販売・輸出どちらも対応可能です。",
+  },
 }
-
-
-
-
 
 
 
