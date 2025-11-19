@@ -90,7 +90,7 @@ export default function Cars() {
                   <img
                     src={car.img}
                     alt={car.title[currentLanguage] || car.title.en}
-                    className={`w-full h-80 object-contain rounded-t-xl transition duration-300 ${car.status === "sold" ? "grayscale opacity-70" : ""
+                    className={`w-full h-auto object-cover rounded-t-xl transition duration-300 ${car.status === "sold" ? "grayscale opacity-70" : ""
                       }`}
                   />
 
